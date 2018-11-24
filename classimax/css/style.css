@@ -48,6 +48,13 @@ label {
   color: #848484;
 }
 
+.preco {
+  float: right;
+  margin-right: 4px;
+  font-size: 14px;
+  color: #848484;
+}
+
 .nav-pills .nav-link {
   font-size: 16px;
 }

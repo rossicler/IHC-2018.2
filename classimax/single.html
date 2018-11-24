@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calssimax</title>
+  <title>TopStock</title>
   
   <!-- PLUGINS CSS STYLE -->
   <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
@@ -39,65 +39,61 @@
 <body class="body-wrapper">
 
 <section>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<nav class="navbar navbar-expand-lg  navigation">
-					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.png" alt="">
-					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav ml-auto main-nav ">
-							<li class="nav-item active">
-								<a class="nav-link" href="index.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="dashboard.html">Dashboard</a>
-							</li>
-							<li class="nav-item dropdown dropdown-slide">
-								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Pages <span><i class="fa fa-angle-down"></i></span>
-								</a>
-								<!-- Dropdown list -->
-								<div class="dropdown-menu dropdown-menu-right">
-									<a class="dropdown-item" href="category.html">Category</a>
-									<a class="dropdown-item" href="single.html">Single Page</a>
-									<a class="dropdown-item" href="store-single.html">Store Single</a>
-									<a class="dropdown-item" href="dashboard.html">Dashboard</a>
-									<a class="dropdown-item" href="user-profile.html">User Profile</a>
-									<a class="dropdown-item" href="submit-coupon.html">Submit Coupon</a>
-									<a class="dropdown-item" href="blog.html">Blog</a>
-									<a class="dropdown-item" href="single-blog.html">Single Post</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown dropdown-slide">
-								<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Listing <span><i class="fa fa-angle-down"></i></span>
-								</a>
-								<!-- Dropdown list -->
-								<div class="dropdown-menu dropdown-menu-right">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</div>
-							</li>
-						</ul>
-						<ul class="navbar-nav ml-auto mt-10">
-							<li class="nav-item">
-								<a class="nav-link login-button" href="index.html">Login</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link add-button" href="#"><i class="fa fa-plus-circle"></i> Add Listing</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-expand-lg  navigation">
+						<a class="navbar-brand" href="index.html">
+							<img src="images/logo.png" alt="">
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto main-nav ">
+								<li class="nav-item active">
+									<a class="nav-link" href="index.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="user-profile.html">Perfil</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="dashboard.html">Carrinho</a>
+								</li>
+								<li class="nav-item dropdown dropdown-slide">
+									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Pages <span><i class="fa fa-angle-down"></i></span>
+									</a>
+									<!-- Dropdown list -->
+									<div class="dropdown-menu dropdown-menu-right">
+										<a class="dropdown-item" href="category.html">Categorias</a>
+										<a class="dropdown-item" href="single.html">Produto único</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown dropdown-slide">
+									<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Vendas <span><i class="fa fa-angle-down"></i></span>
+									</a>
+									<!-- Dropdown list -->
+									<div class="dropdown-menu dropdown-menu-right">
+										<a class="dropdown-item" href="#">Categorias</a>
+										<a class="dropdown-item" href="#">Produtos a venda</a>
+									</div>
+								</li>
+							</ul>
+							<ul class="navbar-nav ml-auto mt-10">
+								<li class="nav-item">
+									<a class="nav-link login-button" href="index.html">Login</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link add-button" href="#"><i class="fa fa-plus-circle"></i> Adicionar produto a venda</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 			</div>
 		</div>
-	</div>
 </section>
 <section class="page-search">
 	<div class="container">
@@ -108,17 +104,18 @@
 					<form>
 						<div class="form-row">
 							<div class="form-group col-md-4">
-								<input type="text" class="form-control" id="inputtext4" placeholder="What are you looking for">
+								<input type="text" class="form-control" id="inputtext4" placeholder="Procure pelo nome do produto">
 							</div>
 							<div class="form-group col-md-3">
-								<input type="text" class="form-control" id="inputCategory4" placeholder="Category">
+								<input type="text" class="form-control" id="inputCategory4" placeholder="Procure pela categoria">
 							</div>
+							<!--
 							<div class="form-group col-md-3">
 								<input type="text" class="form-control" id="inputLocation4" placeholder="Location">
 							</div>
+							-->
 							<div class="form-group col-md-2">
-								
-								<button type="submit" class="btn btn-primary">Search Now</button>
+								<button type="submit" class="btn btn-primary">Pesquisar</button>
 							</div>
 						</div>
 					</form>
@@ -137,12 +134,12 @@
 			<!-- Left sidebar -->
 			<div class="col-md-8">
 				<div class="product-details">
-					<h1 class="product-title">Hp Dual Core 2gb Ram-Slim Laptop Available In Very Low Price</h1>
+					<h1 class="product-title">Hp Dual Core 2gb Ram-Notebook Slim</h1>
 					<div class="product-meta">
 						<ul class="list-inline">
-							<li class="list-inline-item"><i class="fa fa-user-o"></i> By <a href="">Andrew</a></li>
-							<li class="list-inline-item"><i class="fa fa-folder-open-o"></i> Category<a href="">Electronics</a></li>
-							<li class="list-inline-item"><i class="fa fa-location-arrow"></i> Location<a href="">Dhaka Bangladesh</a></li>
+							<li class="list-inline-item"><i class="fa fa-user-o"></i> Por <a href="">Andrew</a></li>
+							<li class="list-inline-item"><i class="fa fa-folder-open-o"></i> Caterogia<a href="">Eletrônicos</a></li>
+							<li class="list-inline-item"><i class="fa fa-location-arrow"></i> Localização<a href="">Dhaka Bangladesh</a></li>
 						</ul>
 					</div>
 					<div id="carouselExampleIndicators" class="product-slider carousel slide" data-ride="carousel">
@@ -174,18 +171,18 @@
 					<div class="content">
 						<ul class="nav nav-pills  justify-content-center" id="pills-tab" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Product Details</a>
+								<a class="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-home" aria-selected="true">Detalhes do Produto</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Specifications</a>
+								<a class="nav-link" id="pills-specification-tab" data-toggle="pill" href="#pills-specification" role="tab" aria-controls="pills-profile" aria-selected="false">Especificações</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</a>
+								<a class="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</a>
 							</li>
 						</ul>
-						<div class="tab-content" id="pills-tabContent">
-							<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-								<h3 class="tab-title">Product Description</h3>
+						<div class="tab-content" id="pills-description">
+							<div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-home-tab">
+								<h3 class="tab-title">Descrição do Produto</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laudantium beatae quod perspiciatis, neque dolores eos rerum, ipsa iste cum culpa numquam amet provident eveniet pariatur, sunt repellendus quas voluptate dolor cumque autem molestias. Ab quod quaerat molestias culpa eius, perferendis facere vitae commodi maxime qui numquam ex voluptatem voluptate, fuga sequi, quasi! Accusantium eligendi vitae unde iure officia amet molestiae velit assumenda, quidem beatae explicabo dolore laboriosam mollitia quod eos, eaque voluptas enim fuga laborum, error provident labore nesciunt ad. Libero reiciendis necessitatibus voluptates ab excepturi rem non, nostrum aut aperiam? Itaque, aut. Quas nulla perferendis neque eveniet ullam?</p>
 
 								<iframe width="100%" height="400" src="https://www.youtube.com/embed/LUH7njvhydE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -193,47 +190,47 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sed, officia reiciendis necessitatibus obcaecati eum, quaerat unde illo suscipit placeat nihil voluptatibus ipsa omnis repudiandae, excepturi! Id aperiam eius perferendis cupiditate exercitationem, mollitia numquam fuga, inventore quam eaque cumque fugiat, neque repudiandae dolore qui itaque iste asperiores ullam ut eum illum aliquam dignissimos similique! Aperiam aut temporibus optio nulla numquam molestias eum officia maiores aliquid laborum et officiis pariatur, delectus sapiente molestiae sit accusantium a libero, eligendi vero eius laboriosam minus. Nemo quibusdam nesciunt doloribus repellendus expedita necessitatibus velit vero?</p>
 
 							</div>
-							<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-								<h3 class="tab-title">Product Specifications</h3>
+							<div class="tab-pane fade" id="pills-specification-tab" role="tabpanel" aria-labelledby="pills-profile-tab">
+								<h3 class="tab-title">Especificações do Produto</h3>
 								<table class="table table-bordered product-table">
-								  <tbody>
-								    <tr>
-								      <td>Seller Price</td>
-								      <td>$450</td>
-								    </tr>
-								    <tr>
-								      <td>Added</td>
-								      <td>26th December</td>
-								    </tr>
-								    <tr>
-								      <td>State</td>
-								      <td>Dhaka</td>
-								    </tr>
-								    <tr>
-								      <td>Brand</td>
-								      <td>Apple</td>
-								    </tr>
-								    <tr>
-								      <td>Condition</td>
-								      <td>Used</td>
-								    </tr>
-								    <tr>
-								      <td>Model</td>
-								      <td>2017</td>
-								    </tr>
-								    <tr>
-								      <td>State</td>
-								      <td>Dhaka</td>
-								    </tr>
-								    <tr>
-								      <td>Battery Life</td>
-								      <td>23</td>
-								    </tr>
-								  </tbody>
+									<tbody>
+										<tr>
+											<td>Preço</td>
+											<td>R$2500,00</td>
+										</tr>
+										<tr>
+											<td>Adicionado</td>
+											<td>26 de Dezembro</td>
+										</tr>
+										<tr>
+											<td>State</td>
+											<td>Dhaka</td>
+										</tr>
+										<tr>
+											<td>Brand</td>
+											<td>Apple</td>
+										</tr>
+										<tr>
+											<td>Condition</td>
+											<td>Used</td>
+										</tr>
+										<tr>
+											<td>Model</td>
+											<td>2017</td>
+										</tr>
+										<tr>
+											<td>State</td>
+											<td>Dhaka</td>
+										</tr>
+										<tr>
+											<td>Battery Life</td>
+											<td>23</td>
+										</tr>
+									</tbody>
 								</table>
 							</div>
-							<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-								<h3 class="tab-title">Product Review</h3>
+							<div class="tab-pane fade" id="pills-review-tab" role="tabpanel" aria-labelledby="pills-contact-tab">
+								<h3 class="tab-title">Review do Produto</h3>
 								<div class="product-review">
 							  		<div class="media">
 							  			<!-- Avater -->
@@ -304,53 +301,59 @@
 			<div class="col-md-4">
 				<div class="sidebar">
 					<div class="widget price text-center">
-						<h4>Price</h4>
-						<p>$230</p>
+						<h4>Preço</h4>
+						<p>R$2500,00</p>
 					</div>
 					<!-- User Profile widget -->
 					<div class="widget user">
-						<img class="rounded-circle" src="images/user/user-thumb.jpg" alt="">
+						<div class="text-center">
+							<img src="images/user/user-thumb.jpg" alt="" class="rounded-circle" height="200px" width="200px">
+						</div>
 						<h4><a href="">Jonathon Andrew</a></h4>
-						<p class="member-time">Member Since Jun 27, 2017</p>
-						<a href="">See all ads</a>
+						<p class="member-time">Membro desde Jun 27, 2017</p>
+						<a href="">Ver todos produtos</a>
 						<ul class="list-inline mt-20">
-							<li class="list-inline-item"><a href="" class="btn btn-contact">Contact</a></li>
-							<li class="list-inline-item"><a href="" class="btn btn-offer">Make an offer</a></li>
+							<li class="list-inline-item"><a href="" class="btn btn-contact">Contato</a></li>
+							<li class="list-inline-item"><a href="" class="btn btn-offer">Adicionar ao carrinho</a></li>
 						</ul>
 					</div>
-					<!-- Map Widget -->
+					<!-- Map Widget
 					<div class="widget map">
 						<div class="map">
 							<div id="map"></div>
 						</div>
-					</div>
+					</div> -->
 					<!-- Rate Widget -->
 					<div class="widget rate">
 						<!-- Heading -->
-						<h5 class="widget-header text-center">What would you rate
-						<br>
-						this product</h5>
+						<h5 class="widget-header text-center">Avalie este produto</h5>
 						<!-- Rate -->
-						<div class="starrr"></div>
+						<div class="product-ratings text-center">
+								<ul class="list-inline">
+									<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+									<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+									<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+									<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+								<li class="list-inline-item"><i class="fa fa-star"></i></li>
+								</ul>
+							</div>
 					</div>
 					<!-- Safety tips widget -->
 					<div class="widget disclaimer">
-						<h5 class="widget-header">Safety Tips</h5>
+						<h5 class="widget-header">Dicas para sua segurança</h5>
 						<ul>
-							<li>Meet seller at a public place</li>
-							<li>Check the item before you buy</li>
-							<li>Pay only after collecting the item</li>
-							<li>Pay only after collecting the item</li>
+							<li>Encontre o vendedor em um local público</li>
+							<li>Verifique o produto antes de comprar</li>
+							<li>Pague apenas depois de receber o produto</li>
 						</ul>
 					</div>
 					<!-- Coupon Widget -->
 					<div class="widget coupon text-center">
 						<!-- Coupon description -->
-						<p>Have a great product to post ? Share it with
-							your fellow users.
+						<p>Possui um bom produto para postar ? Compartilhe com outros usuários.
 						</p>
 						<!-- Submii button -->
-						<a href="" class="btn btn-transparent-white">Submit Listing</a>
+						<a href="" class="btn btn-transparent-white">Anunciar</a>
 					</div>
 					
 				</div>
@@ -403,17 +406,17 @@
           </ul>
         </div>
       </div>
-      <!-- Promotion -->
+			<!-- Promotion
       <div class="col-lg-4 col-md-7">
-        <!-- App promotion -->
+        App promotion
         <div class="block-2 app-promotion">
           <a href="">
-            <!-- Icon -->
+            Icon
             <img src="images/footer/phone-icon.png" alt="mobile-icon">
           </a>
-          <p>Get the Dealsy Mobile App and Save more</p>
+          <p>Get the TopStock Mobile App and Save more</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- Container End -->
@@ -426,7 +429,7 @@
         <div class="col-sm-6 col-12">
           <!-- Copyright -->
           <div class="copyright">
-            <p>Copyright © 2016. All Rights Reserved</p>
+            <p>Copyright © 2018. All Rights Reserved</p>
           </div>
         </div>
         <div class="col-sm-6 col-12">

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calssimax</title>
+  <title>TopStock</title>
   
   <!-- PLUGINS CSS STYLE -->
   <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
@@ -56,7 +56,10 @@
 								<a class="nav-link" href="index.html">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="dashboard.html">Dashboard</a>
+								<a class="nav-link" href="user-profile.html">Perfil</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="dashboard-carrinho-ads.html">Carrinho</a>
 							</li>
 							<li class="nav-item dropdown dropdown-slide">
 								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,25 +67,18 @@
 								</a>
 								<!-- Dropdown list -->
 								<div class="dropdown-menu dropdown-menu-right">
-									<a class="dropdown-item" href="category.html">Category</a>
-									<a class="dropdown-item" href="single.html">Single Page</a>
-									<a class="dropdown-item" href="store-single.html">Store Single</a>
-									<a class="dropdown-item" href="dashboard.html">Dashboard</a>
-									<a class="dropdown-item" href="user-profile.html">User Profile</a>
-									<a class="dropdown-item" href="submit-coupon.html">Submit Coupon</a>
-									<a class="dropdown-item" href="blog.html">Blog</a>
-									<a class="dropdown-item" href="single-blog.html">Single Post</a>
+									<a class="dropdown-item" href="category.html">Categorias</a>
+									<a class="dropdown-item" href="single.html">Produto único</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown dropdown-slide">
 								<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Listing <span><i class="fa fa-angle-down"></i></span>
+									Vendas <span><i class="fa fa-angle-down"></i></span>
 								</a>
 								<!-- Dropdown list -->
 								<div class="dropdown-menu dropdown-menu-right">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#">Categorias</a>
+									<a class="dropdown-item" href="#">Produtos a venda</a>
 								</div>
 							</li>
 						</ul>
@@ -91,7 +87,7 @@
 								<a class="nav-link login-button" href="index.html">Login</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link add-button" href="#"><i class="fa fa-plus-circle"></i> Add Listing</a>
+								<a class="nav-link add-button" href="#"><i class="fa fa-plus-circle"></i> Adicionar produto a venda</a>
 							</li>
 						</ul>
 					</div>
@@ -112,24 +108,24 @@
 			<div class="col-md-12">
 				<!-- Header Contetnt -->
 				<div class="content-block">
-					<h1>Buy & Sell Near You </h1>
+					<h1>TopStock </h1>
 					<p>Join the millions who buy and sell from each other <br> everyday in local communities around the world</p>
 					<div class="short-popular-category-list text-center">
-						<h2>Popular Category</h2>
+						<h2>Categorias Populares</h2>
 						<ul class="list-inline">
 							<li class="list-inline-item">
-								<a href=""><i class="fa fa-bed"></i> Hotel</a></li>
+								<a href=""><i class="fa fa-bed"></i> Casa</a></li>
 							<li class="list-inline-item">
 								<a href=""><i class="fa fa-grav"></i> Fitness</a>
 							</li>
 							<li class="list-inline-item">
-								<a href=""><i class="fa fa-car"></i> Cars</a>
+								<a href=""><i class="fa fa-car"></i> Carros</a>
 							</li>
 							<li class="list-inline-item">
-								<a href=""><i class="fa fa-cutlery"></i> Restaurants</a>
+								<a href=""><i class="fa fa-cutlery"></i> Restaurantes</a>
 							</li>
 							<li class="list-inline-item">
-								<a href=""><i class="fa fa-coffee"></i> Cafe</a>
+								<a href=""><i class="fa fa-coffee"></i> Café</a>
 							</li>
 						</ul>
 					</div>
@@ -142,14 +138,14 @@
 							<!-- Store Search -->
 							<div class="col-lg-6 col-md-12">
 								<div class="block d-flex">
-									<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search" placeholder="Search for store">
+									<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search" placeholder="Procure pelo nome do produto">
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-12">
 								<div class="block d-flex">
-									<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search" placeholder="Search for store">
+									<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search" placeholder="Procure pela categoria">
 									<!-- Search Button -->
-									<button class="btn btn-main">SEARCH</button>
+									<button class="btn btn-main">Pesquisar</button>
 								</div>
 							</div>
 						</div>
@@ -177,8 +173,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="section-title">
-					<h2>Trending Ads</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, magnam.</p>
+					<h2>Anúncios populares</h2>
 				</div>
 			</div>
 		</div>
@@ -189,19 +184,19 @@
 <div class="product-item bg-light">
 	<div class="card">
 		<div class="thumb-content">
-			<!-- <div class="price">$200</div> -->
-			<a href="">
+			<div class="price">R$2500,00</div>
+			<a href="single.html">
 				<img class="card-img-top img-fluid" src="images/products/products-1.jpg" alt="Card image cap">
 			</a>
 		</div>
 		<div class="card-body">
-		    <h4 class="card-title"><a href="">11inch Macbook Air</a></h4>
+		    <h4 class="card-title"><a href="">Macbook Air 13 polegadas</a></h4>
 		    <ul class="list-inline product-meta">
 		    	<li class="list-inline-item">
-		    		<a href=""><i class="fa fa-folder-open-o"></i>Electronics</a>
+		    		<a href=""><i class="fa fa-folder-open-o"></i>Eletrônicos</a>
 		    	</li>
 		    	<li class="list-inline-item">
-		    		<a href=""><i class="fa fa-calendar"></i>26th December</a>
+		    		<a href=""><i class="fa fa-calendar"></i>26 de Dezembro</a>
 		    	</li>
 		    </ul>
 		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
@@ -211,8 +206,8 @@
 		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
 		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
 		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
-		    	</ul>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+				</ul>
 		    </div>
 		</div>
 	</div>
@@ -226,19 +221,19 @@
 <div class="product-item bg-light">
 	<div class="card">
 		<div class="thumb-content">
-			<!-- <div class="price">$200</div> -->
-			<a href="">
+			<div class="price">R$1400,00</div>
+			<a href="single.html">
 				<img class="card-img-top img-fluid" src="images/products/products-2.jpg" alt="Card image cap">
 			</a>
 		</div>
 		<div class="card-body">
-		    <h4 class="card-title"><a href="">Full Study Table Combo</a></h4>
+		    <h4 class="card-title"><a href="">Mesa de Estudo Completa</a></h4>
 		    <ul class="list-inline product-meta">
 		    	<li class="list-inline-item">
-		    		<a href=""><i class="fa fa-folder-open-o"></i>Furnitures</a>
+		    		<a href=""><i class="fa fa-folder-open-o"></i>Móveis</a>
 		    	</li>
 		    	<li class="list-inline-item">
-		    		<a href=""><i class="fa fa-calendar"></i>26th December</a>
+		    		<a href=""><i class="fa fa-calendar"></i>13 de Novembro</a>
 		    	</li>
 		    </ul>
 		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
@@ -248,7 +243,7 @@
 		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
 		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
 		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
 		    	</ul>
 		    </div>
 		</div>
@@ -263,19 +258,19 @@
 <div class="product-item bg-light">
 	<div class="card">
 		<div class="thumb-content">
-			<!-- <div class="price">$200</div> -->
-			<a href="">
+			<div class="price">R$2100,00</div>
+			<a href="single.html">
 				<img class="card-img-top img-fluid" src="images/products/products-3.jpg" alt="Card image cap">
 			</a>
 		</div>
 		<div class="card-body">
-		    <h4 class="card-title"><a href="">11inch Macbook Air</a></h4>
+		    <h4 class="card-title"><a href="">Macbook Air 11 polegadas</a></h4>
 		    <ul class="list-inline product-meta">
 		    	<li class="list-inline-item">
-		    		<a href=""><i class="fa fa-folder-open-o"></i>Electronics</a>
+		    		<a href=""><i class="fa fa-folder-open-o"></i>Eletrônicos</a>
 		    	</li>
 		    	<li class="list-inline-item">
-		    		<a href=""><i class="fa fa-calendar"></i>26th December</a>
+		    		<a href=""><i class="fa fa-calendar"></i>05 de Julho</a>
 		    	</li>
 		    </ul>
 		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
@@ -285,7 +280,7 @@
 		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
 		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
 		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
 		    	</ul>
 		    </div>
 		</div>
@@ -323,13 +318,13 @@
 						<div class="category-block">
 							<div class="header">
 								<i class="fa fa-laptop icon-bg-1"></i> 
-								<h4>Electronics</h4>
+								<h4>Eletrônicos</h4>
 							</div>
 							<ul class="category-list" >
-								<li><a href="category.html">Laptops <span>93</span></a></li>
+								<li><a href="category.html">Notebooks <span>93</span></a></li>
 								<li><a href="category.html">Iphone <span>233</span></a></li>
 								<li><a href="category.html">Microsoft  <span>183</span></a></li>
-								<li><a href="category.html">Monitors <span>343</span></a></li>
+								<li><a href="category.html">Monitores <span>343</span></a></li>
 							</ul>
 						</div>
 					</div> <!-- /Category List -->
@@ -338,13 +333,13 @@
 						<div class="category-block">
 							<div class="header">
 								<i class="fa fa-apple icon-bg-2"></i> 
-								<h4>Restaurants</h4>
+								<h4>Restaurantes</h4>
 							</div>
 							<ul class="category-list" >
-								<li><a href="category.html">Cafe <span>393</span></a></li>
+								<li><a href="category.html">Café <span>393</span></a></li>
 								<li><a href="category.html">Fast food <span>23</span></a></li>
-								<li><a href="category.html">Restaurants  <span>13</span></a></li>
-								<li><a href="category.html">Food Track<span>43</span></a></li>
+								<li><a href="category.html">Restaurantes  <span>13</span></a></li>
+								<li><a href="category.html">Food Truck<span>43</span></a></li>
 							</ul>
 						</div>
 					</div> <!-- /Category List -->
@@ -353,13 +348,13 @@
 						<div class="category-block">
 							<div class="header">
 								<i class="fa fa-home icon-bg-3"></i> 
-								<h4>Real Estate</h4>
+								<h4>Casa</h4>
 							</div>
 							<ul class="category-list" >
-								<li><a href="category.html">Farms <span>93</span></a></li>
-								<li><a href="category.html">Gym <span>23</span></a></li>
-								<li><a href="category.html">Hospitals  <span>83</span></a></li>
-								<li><a href="category.html">Parolurs <span>33</span></a></li>
+								<li><a href="category.html">Construção <span>93</span></a></li>
+								<li><a href="category.html">Móveis <span>23</span></a></li>
+								<li><a href="category.html">Utensílios de cozinha  <span>83</span></a></li>
+								<li><a href="category.html">Tintas <span>33</span></a></li>
 							</ul>
 						</div>
 					</div> <!-- /Category List -->
@@ -368,13 +363,13 @@
 						<div class="category-block">
 							<div class="header">
 								<i class="fa fa-shopping-basket icon-bg-4"></i> 
-								<h4>Shoppings</h4>
+								<h4>Roupas</h4>
 							</div>
 							<ul class="category-list" >
-								<li><a href="category.html">Mens Wears <span>53</span></a></li>
-								<li><a href="category.html">Accessories <span>212</span></a></li>
-								<li><a href="category.html">Kids Wears <span>133</span></a></li>
-								<li><a href="category.html">It & Software <span>143</span></a></li>
+								<li><a href="category.html">Camisetas <span>53</span></a></li>
+								<li><a href="category.html">Shorts <span>212</span></a></li>
+								<li><a href="category.html">Roupas para crianças <span>133</span></a></li>
+								<li><a href="category.html">Calças <span>143</span></a></li>
 							</ul>
 						</div>
 					</div> <!-- /Category List -->
@@ -383,13 +378,13 @@
 						<div class="category-block">
 							<div class="header">
 								<i class="fa fa-briefcase icon-bg-5"></i> 
-								<h4>Jobs</h4>
+								<h4>Escritório</h4>
 							</div>
 							<ul class="category-list" >
-								<li><a href="category.html">It Jobs <span>93</span></a></li>
-								<li><a href="category.html">Cleaning & Washing <span>233</span></a></li>
-								<li><a href="category.html">Management  <span>183</span></a></li>
-								<li><a href="category.html">Voluntary Works <span>343</span></a></li>
+								<li><a href="category.html">Mesas <span>93</span></a></li>
+								<li><a href="category.html">Cadeiras <span>233</span></a></li>
+								<li><a href="category.html">Acessórios  <span>183</span></a></li>
+								<li><a href="category.html">Cadernetas <span>343</span></a></li>
 							</ul>
 						</div>
 					</div> <!-- /Category List -->
@@ -398,13 +393,13 @@
 						<div class="category-block">
 							<div class="header">
 								<i class="fa fa-car icon-bg-6"></i> 
-								<h4>Vehicles</h4>
+								<h4>Veículos</h4>
 							</div>
 							<ul class="category-list" >
-								<li><a href="category.html">Bus <span>193</span></a></li>
-								<li><a href="category.html">Cars <span>23</span></a></li>
-								<li><a href="category.html">Motobike  <span>33</span></a></li>
-								<li><a href="category.html">Rent a car <span>73</span></a></li>
+								<li><a href="category.html">Peças <span>193</span></a></li>
+								<li><a href="category.html">Carros <span>23</span></a></li>
+								<li><a href="category.html">Motos  <span>33</span></a></li>
+								<li><a href="category.html">Aluguel de carros <span>73</span></a></li>
 							</ul>
 						</div>
 					</div> <!-- /Category List -->
@@ -413,13 +408,13 @@
 						<div class="category-block">
 							<div class="header">
 								<i class="fa fa-paw icon-bg-7"></i> 
-								<h4>Pets</h4>
+								<h4>Acessórios Pets</h4>
 							</div>
 							<ul class="category-list" >
-								<li><a href="category.html">Cats <span>65</span></a></li>
-								<li><a href="category.html">Dogs <span>23</span></a></li>
-								<li><a href="category.html">Birds  <span>113</span></a></li>
-								<li><a href="category.html">Others <span>43</span></a></li>
+								<li><a href="category.html">Gatos <span>65</span></a></li>
+								<li><a href="category.html">Cachorros <span>23</span></a></li>
+								<li><a href="category.html">Pássaros  <span>113</span></a></li>
+								<li><a href="category.html">Outros <span>43</span></a></li>
 							</ul>
 						</div>
 					</div> <!-- /Category List -->
@@ -428,7 +423,7 @@
 						<div class="category-block">
 							<div class="header">
 								<i class="fa fa-laptop icon-bg-8"></i> 
-								<h4>Services</h4>
+								<h4>Serviços</h4>
 							</div>
 							<ul class="category-list" >
 								<li><a href="category.html">Cleaning <span>93</span></a></li>
